@@ -1,14 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="HealsCheck" verbose="1" >
-    <test name="Include me" >
+<suite name="Tests results" verbose="1" >
+    <test name="The internet login page home task">
         <classes>
-            <class name="healscheck.IncludeMe" />
-        </classes>
-    </test>
-    <test name="Selenide test">
-        <classes>
-            <class name="selenideexample.SelenideExampleTest"></class>
+            <class name="alluretheinternetloginpagehometask.testpackage.TheInternetLoginPageTest"></class>
         </classes>
     </test>
 </suite>

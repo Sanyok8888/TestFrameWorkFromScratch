@@ -13,6 +13,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <testng.version>7.6.1</testng.version>
         <selenide.version>6.6.6</selenide.version>
+        <selenium.version>4.1.3</selenium.version>
         <surefire.version>3.0.0-M7</surefire.version>
         <aspectj.version>1.8.10</aspectj.version>
         <allure.version>2.18.1</allure.version>
@@ -60,6 +61,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
@@ -78,12 +85,14 @@
             <version>${allure.version}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>${allure.version}</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
 
